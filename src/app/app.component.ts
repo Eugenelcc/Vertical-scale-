@@ -11,6 +11,7 @@ interface SimpleSliderModel {
   templateUrl: './app.component.html'
 })
 export class VerticalSlidersComponent {
+  public name = 'EUGENE';
   verticalSlider6: SimpleSliderModel = {
     value: 45,
     options: {

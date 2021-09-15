@@ -1,11 +1,18 @@
-<div class="container-fluid">
 
-	<div style=" margin-left: 30% ; height: 10px">
-		Your Health Today :
-		<p> value: {{value}}</p>
-	</div>
-	<div class="col-5" style=" margin-left: 60%; height: 500px">
-		<ngx-slider [(value)]="verticalSlider6.value" [options]="verticalSlider6.options"></ngx-slider>
-	</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<div class="row">
+
+<div class="center-block" style="margin-left: -150% ; height: 10px">
+{{name}} Your Health Today :
+<p>value: {{verticalSlider6.value}}</p>
+</div>
+
+<div class="center-block" style=" margin-left: 60%; height: 500px">
+<ngx-slider
+	id="slider"
+	[(value)]="verticalSlider6.value"
+	[options]="verticalSlider6.options"
+></ngx-slider>
+</div>
 
 </div>
