@@ -22,11 +22,11 @@ export class VerticalSlidersComponent {
       showTicksValues: true,
       //tickStep: 10,
       tickValueStep: 10,
-      ticksArray: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
-
-      ticksValuesTooltip: (v: number): string => {
+      //ticksArray: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+      ticksTooltip: (v: number): string => {
         return 'Tooltip for ' + v;
       }
     }
+    
   };
 }
