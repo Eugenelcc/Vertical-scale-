@@ -11,7 +11,7 @@ interface SimpleSliderModel {
   templateUrl: './app.component.html'
 })
 export class VerticalSlidersComponent {
-  public name = 'EUGENE';
+  public name = 'User';
   verticalSlider6: SimpleSliderModel = {
     value: 45,
     options: {
@@ -22,11 +22,11 @@ export class VerticalSlidersComponent {
       showTicksValues: true,
       //tickStep: 10,
       tickValueStep: 10,
-      //ticksArray: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+      ticksArray: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+
       ticksTooltip: (v: number): string => {
         return 'Tooltip for ' + v;
       }
     }
-    
   };
 }
